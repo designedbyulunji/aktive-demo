@@ -748,9 +748,7 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background-color: #0e1425;
+  background-color: #1b2540;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2088,5 +2086,21 @@ fieldset {
 @media (max-width: 430px) {
   .nav-sm.active {
     transform: translateY(0);
+  }
+}
+.index-swiper-sm {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .index-swiper-sm {
+    display: block;
+    height: 20em;
+  }
+  .client-logo {
+    width: 250px;
+  }
+  .index-swiper {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

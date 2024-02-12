@@ -105,7 +105,7 @@ const fullNameEl = document.getElementById("fullname");
 
 function animateFullNamePlaceholder() {
   fullNamePlaceholder += fullNamePlaceholderValue.charAt(x);
-  fullNameEl.setAttribute("placeholder", fullNamePlaceholder);
+  // fullNameEl.setAttribute("placeholder", fullNamePlaceholder);
   x++;
 
   setTimeout(animateFullNamePlaceholder, typeSpeed);
@@ -124,7 +124,7 @@ const emailEl = document.getElementById("email");
 
 function animateEmailPlaceholder() {
   emailPlaceholder += emailPlaceholderValue.charAt(y);
-  emailEl.setAttribute("placeholder", emailPlaceholder);
+  // emailEl.setAttribute("placeholder", emailPlaceholder);
   y++;
 
   setTimeout(animateEmailPlaceholder, 100);
