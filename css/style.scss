@@ -1202,17 +1202,18 @@ body {
 
 .profile-description {
   color: #ddd;
-  font-size: 1.7em;
+  font-size: 1.5em;
 
   bottom: 0;
   transform: translateY(0px);
   transition: $transition;
+  padding: 0.25em 0.5em;
 
   text-align: justify;
 
   &:hover {
     background-color: rgba(22, 15, 59, 1);
-    transform: translateY(-110px);
+    transform: translateY(-160px);
     height: 100%;
   }
 }

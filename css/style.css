@@ -1067,15 +1067,16 @@ body {
 
 .profile-description {
   color: #ddd;
-  font-size: 1.7em;
+  font-size: 1.5em;
   bottom: 0;
   transform: translateY(0px);
   transition: all 250ms ease-in-out 5ms;
+  padding: 0.25em 0.5em;
   text-align: justify;
 }
 .profile-description:hover {
   background-color: rgb(22, 15, 59);
-  transform: translateY(-110px);
+  transform: translateY(-160px);
   height: 100%;
 }
 
