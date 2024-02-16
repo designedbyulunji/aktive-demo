@@ -1209,6 +1209,7 @@ body {
   transition: $transition;
   padding: 0.25em 0.5em;
 
+  z-index: 1;
   text-align: justify;
 
   &:hover {
