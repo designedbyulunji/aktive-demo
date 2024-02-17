@@ -132,3 +132,6 @@ function animateEmailPlaceholder() {
 
 /* EXECUTE EMAIL ANIMATION FUNCTION */
 animateEmailPlaceholder();
+
+/* ANIMATE ON SCROLL */
+AOS.init();

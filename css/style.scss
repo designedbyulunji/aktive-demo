@@ -1665,14 +1665,23 @@ fieldset {
 
 .card-one {
   grid-area: card-one;
+  &:hover {
+    cursor: default;
+  }
 }
 
 .card-two {
   grid-area: card-two;
+  &:hover {
+    cursor: default;
+  }
 }
 
 .card-three {
   grid-area: card-three;
+  &:hover {
+    cursor: default;
+  }
 }
 
 .pricing__price-card {
@@ -1696,19 +1705,31 @@ fieldset {
   font-size: 2em;
   color: #160f3b;
   text-align: center;
-  height: 15%;
-
+  height: 20%;
   @include displayFlex;
+  line-height: 1;
 }
 
 .package-price {
   font-size: 2.5em;
   color: #160f3b;
   text-align: center;
-  height: 15%;
+  height: 10%;
   font-weight: 500;
 
   @include displayFlex;
+  display: none;
+}
+
+.card-shape {
+  background-color: #160f3b;
+  width: 30px;
+  height: 10%;
+  margin-inline: auto;
+  border-radius: 100%;
+  @include displayFlex;
+  color: $text-color-primary;
+  text-align: center;
 }
 
 .package-feature {
@@ -1720,13 +1741,31 @@ fieldset {
       color: #160f3b;
       font-size: 1.5em;
       font-weight: 400;
+      text-align-last: left;
     }
   }
 }
 
 .features-title {
-  font-size: 2em;
-  color: #160f3b;
+  font-size: 1.8em;
+  color: #160f3be0;
+}
+
+.inner-features {
+  display: flex;
+  width: 100%;
+  // align-items: center;
+  justify-content: space-evenly;
+  padding: 0 0.5em;
+
+  ul {
+    li {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #040018e0;
+    }
+  }
+  margin-top: 0.5em;
 }
 
 .order-btn {
@@ -2211,7 +2250,8 @@ fieldset {
 
 // || ----- GRAPHIC DESIGN ----- ||
 .hero-section__right--graphic-design {
-  background-image: url("/project-assests/images/graphics-design-animated.jpg");
+  // background-image: url("/project-assests/images/graphics-design-animated.jpg");
+  background-image: url("/project-assests/aktive-stu-compressed/adobe-products-on-tablet-min.jpg");
 }
 
 .gallery-graphic-design--up-up {
@@ -2219,7 +2259,9 @@ fieldset {
 }
 
 .logo-design-img {
-  background-image: url("/project-assests/images/laptop-pencils.jpg");
+  // background-image: url("/project-assests/images/laptop-pencils.jpg");
+  background-image: url("/project-assests/aktive-stu-compressed/graphics-animated-2-min.jpg");
+  @include resetBackground;
 }
 
 .graphic-img-1 {
@@ -2409,4 +2451,16 @@ fieldset {
   .index-swiper {
     display: none;
   }
+}
+
+.express-description {
+  width: 80%;
+  margin-inline: auto;
+  font-size: 1.5em;
+  color: #160f3b;
+  font-weight: 500;
+}
+
+small {
+  color: #000;
 }

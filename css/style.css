@@ -1470,13 +1470,22 @@ fieldset {
 .card-one {
   grid-area: card-one;
 }
+.card-one:hover {
+  cursor: default;
+}
 
 .card-two {
   grid-area: card-two;
 }
+.card-two:hover {
+  cursor: default;
+}
 
 .card-three {
   grid-area: card-three;
+}
+.card-three:hover {
+  cursor: default;
 }
 
 .pricing__price-card {
@@ -1492,21 +1501,36 @@ fieldset {
   font-size: 2em;
   color: #160f3b;
   text-align: center;
-  height: 15%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 
 .package-price {
   font-size: 2.5em;
   color: #160f3b;
   text-align: center;
-  height: 15%;
+  height: 10%;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
+}
+
+.card-shape {
+  background-color: #160f3b;
+  width: 30px;
+  height: 10%;
+  margin-inline: auto;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
 }
 
 .package-feature {
@@ -1517,11 +1541,26 @@ fieldset {
   color: #160f3b;
   font-size: 1.5em;
   font-weight: 400;
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 
 .features-title {
-  font-size: 2em;
-  color: #160f3b;
+  font-size: 1.8em;
+  color: rgba(22, 15, 59, 0.8784313725);
+}
+
+.inner-features {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0 0.5em;
+  margin-top: 0.5em;
+}
+.inner-features ul li {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: rgba(4, 0, 24, 0.8784313725);
 }
 
 .order-btn {
@@ -1945,7 +1984,7 @@ fieldset {
 }
 
 .hero-section__right--graphic-design {
-  background-image: url("/project-assests/images/graphics-design-animated.jpg");
+  background-image: url("/project-assests/aktive-stu-compressed/adobe-products-on-tablet-min.jpg");
 }
 
 .gallery-graphic-design--up-up {
@@ -1953,7 +1992,10 @@ fieldset {
 }
 
 .logo-design-img {
-  background-image: url("/project-assests/images/laptop-pencils.jpg");
+  background-image: url("/project-assests/aktive-stu-compressed/graphics-animated-2-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .graphic-img-1 {
@@ -2105,4 +2147,15 @@ fieldset {
   .index-swiper {
     display: none;
   }
+}
+.express-description {
+  width: 80%;
+  margin-inline: auto;
+  font-size: 1.5em;
+  color: #160f3b;
+  font-weight: 500;
+}
+
+small {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

@@ -17,6 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- ANIMATE ON SCROLL CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
     <!-- CSS -->
@@ -157,7 +160,12 @@
       </p>
       <!-- ADDITIONAL END -->
       <!-- EMAIL SECTION -->
-      <div class="main__email-wrapper">
+      <div
+        class="main__email-wrapper"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
         <div class="email-wrapper__left-side"></div>
         <div class="email-wrapper__right-side">
           <!-- FORM -->
@@ -168,10 +176,9 @@
               <input
                 type="text"
                 id="fullname"
-                autofocus
                 autocomplete="true"
                 required
-                placeholder="Krassic Felix"
+                placeholder="Designedbyulunji"
               />
               <label for="email">Email</label>
               <input
@@ -245,6 +252,8 @@
         <p class="copyright__info">&copy; Aktive Studios Mw 2024</p>
       </div>
     </footer>
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JAVASCRIPT -->

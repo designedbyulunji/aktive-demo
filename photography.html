@@ -17,6 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- ANIMATE ON SCROLL CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
     <!-- CSS -->
@@ -28,7 +31,12 @@
       <div class="header__hero-section">
         <!-- HERO-SECTION-LEFT-SIDE -->
         <div class="hero-section__left hero-section__left--photography">
-          <div class="photography-hero">
+          <div
+            class="photography-hero"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <h2 class="photography-hero__title">Photography</h2>
             <p class="photography-hero__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
@@ -113,68 +121,187 @@
     <main class="main">
       <!-- PRICING -->
       <section class="pricing">
-        <h2 class="pricing__title">Pricing</h2>
+        <h2
+          class="pricing__title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          2024 Rate Card<br /><span
+            style="font-size: 0.5em; font-weight: 500; color: #e4e4e4"
+            >Basic Prices</span
+          >
+        </h2>
         <!-- ONE -->
-        <div class="pricing__price-card card-one card">
-          <h2 class="package-name">Basic</h2>
+        <div
+          class="pricing__price-card card-one card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+        >
+          <h2 class="package-name">
+            Studio <br />
+            Photoshoots <br />
+          </h2>
+          <span class="card-shape">SP</span>
           <p class="package-price">$0</p>
           <div class="package-feature">
-            <h3 class="features-title">Feature</h3>
-            <ul>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-            </ul>
+            <h3 class="features-title">Features</h3>
+            <div class="inner-features">
+              <ul>
+                <li>01 Photo</li>
+                <li>06 Photos</li>
+                <li>10 Photos</li>
+                <li>20 Photos</li>
+                <li>30 Photos</li>
+              </ul>
+              <!-- TEST -->
+              <ul>
+                <li>MWK 2,000</li>
+                <li>MWK 10,000</li>
+                <li>MWK 17,000</li>
+                <li>MWK 35,000</li>
+                <li>MWK 50,000</li>
+              </ul>
+            </div>
           </div>
           <button class="order-btn">Order Now</button>
         </div>
         <!-- TWO -->
-        <div class="pricing__price-card card-two card">
-          <h2 class="package-name">Standard 🔥</h2>
+        <div
+          class="pricing__price-card card-two card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <h2 class="package-name">
+            Outdoor <br />
+            Photoshoots
+          </h2>
+          <span class="card-shape">OP</span>
           <p class="package-price">$0</p>
           <div class="package-feature">
-            <h3 class="features-title">Feature</h3>
-            <ul>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-            </ul>
+            <h3 class="features-title">Features</h3>
+            <div class="inner-features">
+              <ul>
+                <li>
+                  30 Minutes
+                  <ul>
+                    <li
+                      style="font-size: 0.8em; padding-left: 0.5em; color: #000"
+                    >
+                      - 18 Photos
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  1 Hour Session
+                  <ul>
+                    <li
+                      style="font-size: 0.8em; padding-left: 0.5em; color: #000"
+                    >
+                      - 25 Photos
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- TEST -->
+              <ul>
+                <li>MWK 40,000</li>
+                <li style="margin-top: 16px">MWK 60,000</li>
+              </ul>
+            </div>
           </div>
           <button class="order-btn">Order Now</button>
         </div>
         <!-- THREE -->
-        <div class="pricing__price-card card-three card">
-          <h2 class="package-name">Premium</h2>
+        <div
+          class="pricing__price-card card-three card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="750"
+        >
+          <h2 class="package-name">
+            Express <br />
+            Services
+          </h2>
           <p class="package-price">$0</p>
+          <span class="card-shape">ES</span>
           <div class="package-feature">
-            <h3 class="features-title">Feature</h3>
-            <ul>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-              <li>Feature here</li>
-            </ul>
+            <h3 class="features-title">Features</h3>
+            <p class="express-description">
+              Express services incurs an additional 30&#37; charge over the
+              standard price <br />
+              <small>&#40;Delivery within 24 hours&#41;</small>
+            </p>
           </div>
           <button class="order-btn">Order Now</button>
         </div>
       </section>
       <!-- BEST OF THE WEEK -->
       <section class="main__week-best">
-        <h2 class="best__title">Best Of The Week</h2>
-        <div class="best__card best__card--one"></div>
-        <div class="best__card best__card--two"></div>
-        <div class="best__card best__card--three"></div>
-        <div class="best__card best__card--four"></div>
+        <h2
+          class="best__title"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          Best Of The Week
+        </h2>
+        <div
+          class="best__card best__card--one"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+        ></div>
+        <div
+          class="best__card best__card--two"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        ></div>
+        <div
+          class="best__card best__card--three"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="750"
+        ></div>
+        <div
+          class="best__card best__card--four"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        ></div>
       </section>
       <!-- GALLERY -->
-      <h2 class="gallery">Gallery</h2>
+      <h2
+        class="gallery"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        Gallery
+      </h2>
       <!-- CONFERENCE -->
-      <div class="conference__gallery">
+      <div
+        class="conference__gallery"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
         <div class="conference__description-wrapper">
-          <div class="conference-img"></div>
-          <div class="conference-innerdescription">
+          <div
+            class="conference-img"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          ></div>
+          <div
+            class="conference-innerdescription"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div class="that-weird-class">
               <h2 class="inner-description__title">Conference Shots</h2>
               <p class="inner-description-conf">
@@ -205,7 +332,12 @@
       <!-- WEDDINGS -->
       <div class="weddings__gallery">
         <div class="weddings__description-wrapper">
-          <div class="wedding-innerdescription">
+          <div
+            class="wedding-innerdescription"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div class="that-weird-class">
               <h2 class="inner-description__title">Wedding Shots</h2>
               <p class="inner-description-conf">
@@ -215,7 +347,12 @@
               </p>
             </div>
           </div>
-          <div class="wedding-img"></div>
+          <div
+            class="wedding-img"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          ></div>
         </div>
         <!-- Swiper -->
         <div class="swiper mySwiper wedding-swiper">
@@ -282,6 +419,8 @@
         <p class="copyright__info">&copy; Aktive Studios Mw 2024</p>
       </div>
     </footer>
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JAVASCRIPT -->
